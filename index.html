@@ -167,17 +167,22 @@
 
 // making a self defined object by Constructor method.. the below function is a constructor
 
- //      function person(name, age) {
- //      	this.name= name;
- //      	this.age= age;
+//       function people(name, age) {
+//       	this.name= name;
+//       	this.age= age;
+//       	this.yearsuntilleft= function hey(){
+//       		return this.age + this.name
+//       }
+//   }
+
 
       	
 
- //      	}
       
+// 		var abc = new people ("abc", 45);
 
-	// var Saroj = new person('Saroj' , 44);
-	// var Himal = new person('Himal' , 55);
+// document.write(abc.yearsuntilleft());// don forget () while calling the fun
+	
 
 	// document.write(Saroj.name)
 
@@ -189,16 +194,123 @@
                     // second method for creating objects
 
 
-                    		var person= {
-                    			name:"Saroj",
-                    			age: 22
-                    		}
+//                     		var person= {
+//                     			name:"Saroj",
+//                     			age: 22
+//                     		}
 
-document.write(person.name, person.age)
+// document.write(person.name, person.age)
 
 
 
+
+//					Arrays   Collection of similar type of data
+
+
+			 // var man = ["Saroj", "himal", "bob"]
+
+			 // document.write(man[0]);
+
+			 // man[3]= "dheeraj";
+
+			 // man.push("saks")
+
+
+			  // document.write(man)
+  
+
+
+// using array methods
+
+
+			// document.write(man.lastIndexOf())
+
+
+
+// Using Join and pop
+
+// join converts array into string
+
+// var car = ["A", "B", "C"]
+// var jeep = car.join(' - ');
+
+
+// document.write(jeep);
+// 
+
+
+//reverse and sort push
+// car.push("D")
+// car[2]= "z"
+// document.write(car)
+// document.write("------------")
+// document.write(car.reverse())
+
+
+
+//taking user inputs by using prompts
+
+
+// var bike= [];
+
+// for(var i=0; i<3 ; i++){
+
+// 	bike[i] = prompt("enter name", "");
+// }
+
+// document.write(bike)
+
+
+
+//                             MATH OBJECTS
+
+
+
+// document.write(Math.PI)
+
+// var x = prompt("enter no:","")
+
+// var y = Math.sqrt(x)
+
+
+// alert(y)
+
+
+
+//Date Objects
+
+
+// function hey(){
+// 	document.write("hey")
+// }
+
+// setInterval("hey()", 1000)
+
+
+// function hey(){
+
+// 	var now = new Date();
+// 	var hours = now.getHours();
+// 	var min = now.getMinutes();
+// 	var sec = now.getSeconds();
+
+// 	document.write(hours + ":" + min +":"+ sec + "<br>")
+// }
+
+// setInterval("hey()", 1000)
+
+fun(){
+
+	if(document.form1.box.checked){
+		alert('checked successfully')
+	}
+
+	else{
+		alert("Not checked yet")
+	}
+}
 	</script>
+
 </head>
 <body>
 
@@ -212,6 +324,22 @@ document.write(person.name, person.age)
 	<button onclick="alert('you have choosen the button')"> Button</button>
 </form> -->
 
+<!-- 
+how to access forms -->
+
+<!-- <form name="form1">
+	username:<input type="text" name="username" value="saroj">
+	password:<input type="password" name="password" value="1234">
+	<input type="submit" name="submit">
+
+</form> -->
+
+
+<form name="form1">
+	<input type="checkbox" name="box">
+	<input type="submit" name="submit" onClick="fun()">
+
+</form>
 
 
 <script type="text/javascript">
@@ -231,10 +359,28 @@ document.write(person.name, person.age)
 
 
 //accessing objects values from the manual method done in header script
+ // var y =document.form1.password.value
+ // document.write(y)
+
+//Destructuring example
+<script>
+let person = {
+name:"saroj",
+surname:"Kunwar",
+age:22,
+college:{name:'ku', address:"dhulikhel"}
+}
+
+const{name, surname} = person
+document.write( surname)
+
+const{college:{address}}= person 
+
+document.write(address)
 
 
+</script>
 
-document.write(person.age, person.name)
 
 
 </script>

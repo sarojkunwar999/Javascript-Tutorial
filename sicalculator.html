@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculate</title>
+
+	<script type="text/javascript">
+
+		function calculate(){
+			 P = document.getElementById("P").value;
+			 T = document.getElementById("T").value;
+			 R = document.getElementById("R").value;
+			 result = document.getElementById("result");
+
+			result.innerHTML = "The SI is: " + (P*T*R/100);
+
+			//  result = (P*T*R/100);
+
+			// alert(result)
+
+
+		}
+
+	</script>
+</head>
+<body>
+
+Enter Principle: <input id= "P">
+Enter Rate:<input id ="R">
+Enter Time:<input id="T">
+<button onClick = "calculate()">Calculate</button>
+<P id = "result"></P>
+
+
+<form>
+	<select>
+		<option>RED</option>
+		<option>blue</option>
+		<option>white</option>
+		<option>cool</option>
+
+	</select>
+</form>
+</body>
+</html>
