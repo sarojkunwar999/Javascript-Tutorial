@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>sample slider</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<style >
+		#container{
+			margin: 0;
+			padding: 0;
+			font-family: "Circular Std Book"
+			
+		}
+
+
+		#wrapper{
+			position: relative;
+			height: 550px;
+			width: 550px;
+		}
+		#slider{
+			margin:20px;
+			border: 1px solid #5e5d6d;
+			height: 550px;
+			width: 550px;
+			border-radius: 6px;
+			background-image: linear-gradient(#0061B1, #00A9B0);
+ 			overflow-x: scroll;
+ 			overflow-y: hidden;
+ 			white-space: nowrap;
+ 			display: grid;
+ 			grid-template-columns: auto auto auto auto auto auto auto auto; 
+ 			
+
+			
+
+		}
+
+	
+
+			
+			
+		
+
+		#wrapper #slider .outdiv{
+			border-radius: 7px;
+			height: 450PX;
+			width:  450px;
+			background: red;
+			margin: auto 15px auto 15px;
+			overflow: hidden;
+
+
+		}	
+
+		#container #wrapper #left{
+			position: absolute;
+			top:275px;
+			left: 13px;
+			padding: 15px;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 4px;
+			background: #072454;
+			border: none;
+			color: white;
+			width: 75px;
+			opacity: 0.5;
+
+			
+		}
+
+		#container #wrapper #right{
+			position: absolute;
+			top:275px;
+			left: 525px;
+			padding: 15px;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 4px;
+			background: #072454;
+			border: none;
+			color: white;
+			width: 75px;
+			opacity: 0.5;
+
+			
+
+		}
+
+		#container #wrapper #slider::-webkit-scrollbar { 
+    	display: none;  
+}
+	
+	</style>
+<script type="text/javascript">
+	var i= 0;
+	$(document).ready(function(){
+		$(".left").click(function(){
+			console.log(i)
+			i=i+450
+		$(".slider").animate({scrollLeft: i.toString()+'px'})
+			
+	}) 
+	})
+
+	 
+	$(document).ready(function(){
+		$(".right").click(function(){
+			console.log(i)
+			i=i-450
+		$(".slider").animate({scrollLeft: i.toString()+'px'})
+		
+			
+	}) 
+	})
+
+</script>
+
+<!-- <script type="text/javascript">
+	var a= 600;
+	$(document).ready(function(){
+		$(".right").click(function(){
+			console.log(a)
+		$(".slider").animate({scrollRight: a.toString()+'px'})
+			a=a+600
+	}) 
+	})
+
+</script>		 -->
+
+
+</head>
+	<body>
+		<div id="container">
+			<div id="wrapper">
+				<button id="left" class="left"> < </button>
+				<button id="right" class="right"> > </button>
+				<div id="slider" class="slider">
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='1.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='2.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='3.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='4.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='5.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='6.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='7.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='8.jpg'></img>
+					</div>
+				</div>
+		</div>
+
+
+
+
+
+
+		<div id="wrapper">
+				<button id="left" class="left"> < </button>
+				<button id="right" class="right"> > </button>
+				<div id="slider" class="slider">
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='1.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='2.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='3.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='4.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='5.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='6.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='7.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='8.jpg'></img>
+					</div>
+				</div>
+		</div>
+
+
+
+
+<div id="wrapper">
+				<button id="left" class="left"> < </button>
+				<button id="right" class="right"> > </button>
+				<div id="slider" class="slider">
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='1.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='2.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='3.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='4.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='5.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='6.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='7.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='8.jpg'></img>
+					</div>
+				</div>
+		</div>
+
+
+
+
+
+
+
+<div id="wrapper">
+				<button id="left" class="left"> < </button>
+				<button id="right" class="right"> > </button>
+				<div id="slider" class="slider">
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='1.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='2.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='3.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='4.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='5.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='6.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='7.jpg'></img>
+					</div>
+					<div class="outdiv">
+						<img style="height: 450px; width: 450px" src='8.jpg'></img>
+					</div>
+				</div>
+		</div>
+
+
+		</div>
+		
+
+
+
+
+
+
+	</body>
+</html
+
